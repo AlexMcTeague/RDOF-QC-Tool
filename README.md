@@ -3,6 +3,7 @@
 During a month-long "QC push", I discussed with my coworker Brandon Trapp that we didn't have fast and easy ways to check certain data; most of our QC is done manually. Together we asked management if we could set aside time to work on a new tool to aid in performing this QC. Given the success of ![DesignShark](https://github.com/AlexMcTeague/DesignShark), they agreed, and allowed us a few hours each week to collaborate. The RDOF QC Tool is the result of our work, and made up for the time investment in spades; today it helps shave hours off of every QC, greatly improves the quality of my department's work _prior_ to submission, and allows users to check for errors that would otherwise be too time-intensive to do manually.
 
 **Disclaimer:** The RDOF QC Tool is available in this repository, but the sample data used in the screenshots and videos below is not publicly available. I can provide a full demonstration of the RDOF QC Tool's features on request.
+
 **Note:** The macros ran much slower while recording software was active; in reality most of the RDOF QC Tool's macros are near-instantaneous.
 
 # Features
@@ -22,6 +23,7 @@ During a month-long "QC push", I discussed with my coworker Brandon Trapp that w
 **BOMs:** This tab extracts data from the BOMs and Overall BOM, and displays it in a dashboard for easy viewing. Macro also checks both documents for errors, and compares the two to find inconsistencies.
 
 **KMZ:** One of our design deliverables is a KMZ file, which shows all addresses, fiber equipment, etc in Google Earth. It's possible to manually check this file for mistakes, but doing so requires clicking each element to see its data. The KMZ tab of the QC tool extracts this data into multiple Excel tabs, which makes it very easy to sort and filter the data while checking for mistakes. In addition, running the KMZ macro creates a new KML file. This new file has multiple folders, representing each type of data for each class of equipment. The user can enable these folders separately to display data as visible labels, removing the requirement to click each element.
+
 ![Click to view KMZ demo video](https://i.imgur.com/wxmoIIK.mp4)
 
 **MQMS/Prism:** The RDOF QC Tool can extract data from all deliverables in a completed project, and display it in a Userform. This userform visually matches the formatting in MQMS and Prism, allowing the user to easily fill out these web forms, or compare the data if they're already filled out.
