@@ -20,12 +20,18 @@ During a month-long "QC push", I discussed with my coworker Brandon Trapp that w
 
 ![Port Continuity QC](https://i.imgur.com/8Kbu1d0.png)
 
-**BOMs:** This tab extracts data from the BOMs and Overall BOM, and displays it in a dashboard for easy viewing. Macro also checks both documents for errors, and compares the two to find inconsistencies.
+**BOMs:** This tab extracts data from the BOMs and Overall BOM, and displays it in a dashboard for easy viewing. The macro also checks both documents for errors, and compares the two to find inconsistencies.
+
+![BOMs tab QC](https://i.imgur.com/rzuxX6M.png)
 
 **KMZ:** One of our design deliverables is a KMZ file, which shows all addresses, fiber equipment, etc in Google Earth. It's possible to manually check this file for mistakes, but doing so requires clicking each element to see its data. The KMZ tab of the QC tool extracts this data into multiple Excel tabs, which makes it very easy to sort and filter the data while checking for mistakes. In addition, running the KMZ macro creates a new KML file. This new file has multiple folders, representing each type of data for each class of equipment. The user can enable these folders separately to display data as visible labels, removing the requirement to click each element.
 
 ![Click to view KMZ demo video](https://i.imgur.com/wxmoIIK.mp4)
 
 **MQMS/Prism:** The RDOF QC Tool can extract data from all deliverables in a completed project, and display it in a Userform. This userform visually matches the formatting in MQMS and Prism, allowing the user to easily fill out these web forms, or compare the data if they're already filled out.
+
+![MQMS QC](https://i.imgur.com/ccOVl8w.png)
+
+![Prism QC](https://i.imgur.com/MW9zk3Q.png)
 
 # See also: ![DesignShark](https://github.com/AlexMcTeague/DesignShark)
