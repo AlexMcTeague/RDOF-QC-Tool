@@ -1,0 +1,21 @@
+﻿Private Sub Worksheet_Change(ByVal Target As Range)
+    ' Has the cell with the dropdown changed?
+    If Not Intersect(Range("Email_Company"), Target) Is Nothing Then
+        Application.ScreenUpdating = False
+        Application.EnableEvents = False
+        
+        With Range("Email_Company")
+            ' By default, hide the two rows after the Company dropdown
+            .Offset(1, 0).EntireRow.Hidden = True
+            .Offset(2, 0).EntireRow.Hidden = True
+            ' Inspect the value of the dropdown
+            If .Value = "In-House (DG1/DG5)" Then
+                .Offset(1, 0).EntireRow.Hidden = False
+                .Offset(2, 0).EntireRow.Hidden = False
+            End If
+        End With
+        
+        Application.EnableEvents = True
+        Application.ScreenUpdating = True
+    End If
+End Sub
